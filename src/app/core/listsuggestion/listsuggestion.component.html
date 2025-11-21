@@ -1,0 +1,27 @@
+<div class="container">
+        <div class="card p-6">
+            <h1 class="card-title mb-2">{{ sugg.title }}</h1>
+            
+            <p class="mb-3">
+                <span class="badge badge-category">{{ sugg.category }}</span>
+                <span class="text-date ms-2">{{ sugg.date | date:'dd MMM yyyy' }}</span>
+            </p>
+            
+            <p class="text-muted mb-4">
+                {{ sugg.description }}
+            </p>
+            
+            <button class="btn btn-accepted mb-3">{{ sugg.status }}</button>
+            
+            <div class="d-flex gap-2">
+                <button class="btn btn-like" (click)="likeSuggestion(sugg.id)" [disabled]="sugg.nbrLikes>=20">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    Like {{ sugg.nbrLikes }}
+                </button>
+                <button class="btn btn-favorite">
+                    <i class="bi bi-heart"></i>
+                    Ajouter aux favoris
+                </button>
+            </div>
+        </div>
+    </div>
