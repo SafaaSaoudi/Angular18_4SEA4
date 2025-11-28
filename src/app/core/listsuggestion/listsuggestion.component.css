@@ -1,55 +1,93 @@
+.suggestion-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 30px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.10);
+  max-width: 900px;
+  margin: 25px auto;
+  font-family: "Segoe UI", sans-serif;
+}
 
-        body {
-            background-color: #f5f5f5;
-            padding: 2rem 0;
-        }
-        .card {
-            max-width: 600px;
-            margin: 0 auto;
-            border: none;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #1a1a1a;
-        }
-        .badge-category {
-            background-color: transparent;
-            color: #0066cc;
-            font-size: 0.9rem;
-        }
-        .text-date {
-            color: #666;
-            font-size: 0.9rem;
-        }
-        .btn-accepted {
-            background-color: #e6f7f0;
-            color: #00a376;
-            border: none;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            padding: 0.375rem 1rem;
-        }
-        .btn-like {
-            background-color: #0066cc;
-            color: white;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            padding: 0.375rem 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.375rem;
-        }
-        .btn-favorite {
-            background-color: #f0f0f0;
-            color: #666;
-            border: none;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            padding: 0.375rem 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.375rem;
-        }
+.header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: #1f2d3d;
+}
+
+.meta {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #606f7b;
+}
+
+.meta .category {
+  color: #0066cc;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.description {
+  margin: 22px 0;
+  color: #3a3a3a;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.accepted {
+  background: #d3f5d3;
+  color: #2e7d32;
+}
+ .rejected {
+  background: #f8d7da;
+  color: #a71d2a;
+ }
+
+ .waiting {
+  background: #fff3cd;
+  color: #856404;
+ }
+
+.actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.like-btn,
+.fav-btn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.like-btn {
+  background: #0066ff;
+  color: #fff;
+}
+
+.like-btn:hover {
+  background: #0050cc;
+}
+
+.fav-btn {
+  background: #f3f3f3;
+  color: #333;
+}
+
+.fav-btn:hover {
+  background: #e0e0e0;
+}
