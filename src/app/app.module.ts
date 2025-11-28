@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { ListsuggestionComponent } from './core/listsuggestion/listsuggestion.component';
+import { HomeComponent } from './core/home/home.component';
+import { NotfoundComponent } from './core/notfound/notfound.component';
 
 @NgModule({
   declarations: [ //liste des composants
-    AppComponent, HeaderComponent, FooterComponent, ListsuggestionComponent
+    AppComponent, HeaderComponent, FooterComponent, ListsuggestionComponent, HomeComponent, NotfoundComponent
   ],
   imports: [
     BrowserModule,
